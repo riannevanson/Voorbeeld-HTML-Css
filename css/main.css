@@ -1,0 +1,45 @@
+
+
+@font-face {
+    font-family: 'dax-bold';
+    src: url('fonts/Dax-Bold.ttf') format('ttf');
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'dax-medium';
+    src: url('fonts/Dax-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dax-regular';
+    src: url('fonts/Dax-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dax-light';
+    src: url('fonts/Dax-Light.ttf') format('ttf');
+    font-weight: light;
+    font-style: normal;
+
+}
+
+
+
+.testveld{
+    color: red;
+font-family: dax-bold;
+}
