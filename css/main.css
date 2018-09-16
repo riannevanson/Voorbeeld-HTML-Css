@@ -37,9 +37,91 @@
 
 }
 
+html {
+    font-size: 12px;
+    box-sizing: border-box;
+  }
 
-
-.testveld{
-    color: red;
-font-family: dax-bold;
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Dax-Regular;
 }
+article{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+ 
+.banner-wrapper{ 
+   display: flex;
+   flex-direction: column;
+   height: 48.58rem;
+}
+
+.banner-top{
+    height: 33.33rem;
+    width: 100%;
+    background-color: #D3EEFB;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.banner-bottom{
+    box-sizing: border-box;
+    height: 15.25rem;
+    width: 100%;
+    background-image: linear-gradient(-90deg, #008442 0%, #9ECC2B 100%);
+    position: absolute; 
+    top: 33.33rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 13.5rem;  
+ }
+
+ .banner-bottom__txt{
+     color: #FFFFFF;
+     width: 23.25rem;
+     height: 8.33rem;
+ }
+
+.banner-tree{
+  display: block;
+  background-image: url("images/header.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: 24rem;
+  width: 19.42rem;
+  align-self: flex-end;
+  margin-left: 11.08rem;
+}
+
+
+.bereken-je-groen-tarief-wrapper{
+    background-color: #FFFFFF;
+    height: 33.33rem;
+    width: 40.25rem;
+    box-shadow: 0 0.08rem 0.67rem 0 #CCCECE;
+    z-index: 999;
+    margin-left: 11.92rem; 
+    margin-top: 8.33rem;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.kies-je-product{
+display: block;
+    box-sizing: border-box;
+    width:100%;
+    background-color: red;
+    padding-top: 3.3rem;
+
+}
+
+.kies-je-product__txt{
+    font-size: 2rem;
+
+} 
