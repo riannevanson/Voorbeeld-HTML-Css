@@ -116,7 +116,6 @@ article{
 display: block;
     box-sizing: border-box;
     width:100%;
-    background-color: red;
     padding-top: 3.3rem;
 
 }
@@ -142,12 +141,77 @@ display: block;
     background-color: #F9FCFD;
     margin-right: 0.4rem;
     margin-left: 0.4rem;
+    border-radius: 0.33rem;
+    box-shadow: 0 0.08rem 0.67rem 0 #CCCECE;
 }
 
 .kies-je-product-card--highlighted{
     height: 43.33rem;
+    border-width: 0.08rem;
+    border-color: #0099DC;
 }
 
 .kies-je-product-card--transparent{
    opacity: 0.35;  
+}
+
+.kies-je-product-card__img{
+    background-image: url("images/groen-uit-nederland.png");
+    height: 9.25rem;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.kies-je-product-card--higlighted__img{
+    height: 12rem;
+    background-image: url("images/wind-uit-nederland.png");
+}
+
+.kies-je-product-card--transparent__img{
+    background-image: url("images/wind-met-boks.png");
+}
+
+
+.kies-je-product-card__contentwrapper{
+    padding: 2rem;
+}
+
+.kies-je-product-card__txt--title{
+    font-size: 1.75rem;
+    font-family: dax-bold;
+}
+
+.kies-je-product-card__txt--alinea{
+    font-size: 1.33rem;
+    font-family: dax-normal;
+}
+
+.kies-je-product-card__txt-bedrag-termijn-wrapper{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.kies-je-product-card__txt-bedrag-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.kies-je-product-card__txt-termijn-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.kies-je-product-card__txt--per-jaar{
+    font-size: 1.17rem;
+    font-family: dax-normal;
+}
+
+.kies-je-product-card__txt--maandelijks{
+    font-size: 1.17rem;
+    font-family: dax-normal;
 }
