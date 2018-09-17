@@ -37,6 +37,29 @@
 
 }
 
+.txt--light{
+    font-family: dax-light;
+}
+.txt--regular{
+    font-family: dax-normal;
+    font-size: 1.33rem;
+    color: #9B9B9B;
+}
+.txt--medium{
+    font-family: dax-medium;
+    font-size: 1.17rem;
+}
+.txt--title{
+    font-family: dax-bold;
+    font-size: 1.75rem;
+}
+
+.txt__align--center{
+    text-align: center;
+}
+
+
+
 html {
     font-size: 12px;
     box-sizing: border-box;
@@ -113,7 +136,7 @@ article{
 }
 
 .kies-je-product{
-display: block;
+    display: block;
     box-sizing: border-box;
     width:100%;
     padding-top: 3.3rem;
@@ -149,6 +172,7 @@ display: block;
     height: 43.33rem;
     border-width: 0.08rem;
     border-color: #0099DC;
+    border-style: solid;
 }
 
 .kies-je-product-card--transparent{
@@ -176,25 +200,23 @@ display: block;
 .kies-je-product-card__contentwrapper{
     padding: 2rem;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    height: 27.25rem;
+    justify-content: space-between;  
 }
 
 .kies-je-product-card__txt--title{
-    font-size: 1.75rem;
-    font-family: dax-bold;
     padding-bottom: 0.58rem;
 }
 
 .kies-je-product-card__txt--alinea{
-    font-size: 1.33rem;
-    font-family: dax-normal;
     padding-bottom: 2.58rem;
 }
 
 .kies-je-product-card__txt-bedrag-termijn-wrapper{
     display:flex;
     justify-content: space-between;
-    padding-bottom: 0.58rem;
+    padding-bottom: 1.58rem;
 
 }
 
@@ -212,26 +234,34 @@ display: block;
 
 .kies-je-product-card__txt--per-jaar{
     font-size: 1.17rem;
-    font-family: dax-normal;
     padding-bottom: 1rem;
 }
 
 .kies-je-product-card__txt--maandelijks{
     font-size: 1.17rem;
+    color:  #9B9B9B;
+}
+
+span{
     font-family: dax-normal;
+    font-size: 1.33rem;
+    color: #9B9B9B;
 }
 .kies-je-product-card__txt-bedrag-maandelijks{
-    text-align: right;    
+    text-align: right;  
+    color: #666666;  
 }
 
 .kies-je-product-card__txt-bedrag-jaar{
     text-align: right;
     padding-bottom: 1rem;
+    color: #9B9B9B;
 }
 
 .kies-je-product-card__btn{
     display:flex;
     justify-content: center;
+    margin-bottom: 1.17rem;
 }
 
 .btn{
@@ -248,8 +278,7 @@ display: block;
     display: flex;
     justify-content: center;
     align-content: center;
-
-}
+  }
 
 .btn__txt{
     font-family: dax-medium;
@@ -268,4 +297,6 @@ text-align: center;
     color: #007D46;
     font-family: dax-medium;
     font-size: 1.17rem;
+    line-height: 2rem;
 }
+
