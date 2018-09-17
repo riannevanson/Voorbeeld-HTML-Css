@@ -175,43 +175,97 @@ display: block;
 
 .kies-je-product-card__contentwrapper{
     padding: 2rem;
+    display: flex;
+    flex-direction: column;    
 }
 
 .kies-je-product-card__txt--title{
     font-size: 1.75rem;
     font-family: dax-bold;
+    padding-bottom: 0.58rem;
 }
 
 .kies-je-product-card__txt--alinea{
     font-size: 1.33rem;
     font-family: dax-normal;
+    padding-bottom: 2.58rem;
 }
 
 .kies-je-product-card__txt-bedrag-termijn-wrapper{
     display:flex;
     justify-content: space-between;
+    padding-bottom: 0.58rem;
 
 }
 
 .kies-je-product-card__txt-bedrag-wrapper{
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;
+
 }
 
 .kies-je-product-card__txt-termijn-wrapper{
     display:flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
 
 .kies-je-product-card__txt--per-jaar{
     font-size: 1.17rem;
     font-family: dax-normal;
+    padding-bottom: 1rem;
 }
 
 .kies-je-product-card__txt--maandelijks{
     font-size: 1.17rem;
     font-family: dax-normal;
+}
+.kies-je-product-card__txt-bedrag-maandelijks{
+    text-align: right;    
+}
+
+.kies-je-product-card__txt-bedrag-jaar{
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+.kies-je-product-card__btn{
+    display:flex;
+    justify-content: center;
+}
+
+.btn{
+    height: 3.58rem;
+    background: #ffce00; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffce00 0%, #fbc600 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffce00 0%,#fbc600 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffce00 0%,#fbc600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce00', endColorstr='#fbc600',GradientType=0 ); /* IE6-9 */
+    border-radius: 0.33rem;
+    -webkit-box-shadow: 0 0.08rem 0.17rem 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0.08rem 0.17rem 0 rgba(0,0,0,0.4);
+    box-shadow: 0 0.08rem 0.17rem 0rem rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.btn__txt{
+    font-family: dax-medium;
+    font-size: 1.5rem;
+    padding-top: 0.6rem;
+    color: #725A07;
+}
+
+.kies-je-product-card__meer-informatie-wrapper{
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+.kies-je-product-card__meer-informatie__txt{
+    text-decoration: underline;
+    color: #007D46;
+    font-family: dax-medium;
+    font-size: 1.17rem;
 }
