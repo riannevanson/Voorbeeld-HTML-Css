@@ -90,6 +90,30 @@
      align-items: flex-end;
  }
  
+  /* Tablet Styles */
+  @media only screen and (min-width: 415px) and (max-width: 1024px) {
+
+    .banner-top{
+        display: flex; 
+        justify-content: center;
+        width:100%;
+    }
+
+    .bereken-je-groen-tarief-wrapper{
+        margin: 2rem;
+        margin-top: 2rem;
+        width: 40rem;
+        }
+
+    .banner-bottom{
+        align-items: center;
+       padding-right: 2rem;
+       /* justify-content: center;
+       text-align: center; */
+    }
+    
+  }
+
  
  /* Mobile Styles */
 @media only screen and (max-width: 415px) {
@@ -123,27 +147,4 @@
 
   }
 
-  /* Tablet Styles */
-  @media only screen and (min-width: 415px) and (max-width: 960px) {
-
-    .banner-top{
-        display: flex; 
-        justify-content: center;
-        width:100%;
-    }
-
-    .bereken-je-groen-tarief-wrapper{
-        margin: 2rem;
-        margin-top: 2rem;
-        width: 40rem;
-        }
-
-    .banner-bottom{
-        align-items: center;
-       padding-right: 0;
-       justify-content: center;
-       text-align: center;
-    }
-    
-  }
 
