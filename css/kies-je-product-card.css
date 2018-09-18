@@ -119,4 +119,18 @@ span{
         line-height: 2rem;
     }
     
-    
+    /* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .kies-je-product-card{
+        margin-bottom: 2rem;
+        width: 30rem;
+    }
+
+
+    .kies-je-product-card--highlighted{ 
+    order: -1;
+    }
+  }
+
+
+   
