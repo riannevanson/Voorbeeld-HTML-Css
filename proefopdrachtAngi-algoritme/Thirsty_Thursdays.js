@@ -31,7 +31,7 @@ console.log('hi')
 
 /////////////////////------------------getting newdirection------------------///////////////////
 // let newDirection = 0;
-// let directionInput = ["L", 4];
+let directionInput = ["L", 4];
 // let currentDirection = "E";
 
 function getNewDirection(directionInput, currentDirection){
@@ -69,8 +69,30 @@ function getNewDirection(directionInput, currentDirection){
 
 console.log(getNewDirection(["R", 4], "W"))
 
+// inputs: directionInput, currentDirection, currentPosition
 
+let currentPositionX = 0;
+let currentPositionY = 0;
 
+function getNewPosition(currentPositionX, currentPositionY, newDirection, directionInput){
+    if (newDirection === "N"){
+        currentPositionX = (currentPositionX + 0)
+        currentPositionY = (currentPositionY + directionInput[1]) 
+    } else if(newDirection === "E") {
+        currentPositionX = (currentPositionX + directionInput[1]) 
+        currentPositionY = (currentPositionY + 0) 
+    } else if(newDirection === "S"){
+        currentPositionX = (currentPositionX + 0) 
+        currentPositionY = (currentPositionY - directionInput[1])  
+    } else if(newDirection === "W"){
+        currentPositionX = (currentPositionX - directionInput[1])
+        currentPositionY = (currentPositionY + 0)  
+    } else { 
+        return "wrong newDirection"}
+    return [currentPositionX, currentPositionY];
+}
+
+console.log(getNewPosition(currentPositionX, currentPositionY, newDirection, directionInput))
 
 
 
