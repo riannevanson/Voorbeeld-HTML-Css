@@ -31,33 +31,34 @@ console.log('hi')
 
 /////////////////////------------------getting newdirection------------------///////////////////
 // let newDirection = 0;
-let directionInput = ["L", 4];
+let directionInput = ["0", 6];
 // let currentDirection = "E";
 
 function getNewDirection(directionInput, currentDirection){
-    switch(directionInput[0] && currentDirection) {
-        case "L" && "N":
+//   console.log(directionInput[0])
+    switch(directionInput[0] + currentDirection) {
+        case "L" + "N":
             newDirection = "W";
         break;
-        case "L" && "E":
+        case "L" + "W":
             newDirection = "S";
         break;
-        case "L" && "S":
+        case "L" + "S":
             newDirection = "E";
         break;
-        case "L" && "W":
+        case "L" + "E":
             newDirection = "N";
         break;
-        case "R" && "N":
+        case "R" + "N":
             newDirection = "E";
         break;
-        case "R" && "E":
+        case "R" + "E":
             newDirection = "S";
         break; 
-        case "R" && "S":
+        case "R" + "S":
             newDirection = "W";
         break;
-        case "R" && "W":
+        case "R" + "W":
             newDirection = "N";
         break;
         default:
@@ -67,35 +68,52 @@ function getNewDirection(directionInput, currentDirection){
 }
 
 
-console.log(getNewDirection(["R", 4], "W"))
+console.log("getNewDirection" + getNewDirection(["L", 6], "E"))// "N"
 
 // inputs: directionInput, currentDirection, currentPosition
 
-let currentPositionX = 0;
-let currentPositionY = 0;
 
-function getNewPosition(currentPositionX, currentPositionY, newDirection, directionInput){
+/////////////////////------------------getting newdirection------------------///////////////////
+let currentPosition = [2,6]
+directionInput = ["L", 6];
+
+
+function getNewPosition(currentPosition, newDirection, directionInput){
     if (newDirection === "N"){
-        currentPositionX = (currentPositionX + 0)
-        currentPositionY = (currentPositionY + directionInput[1]) 
+        currentPosition[0] = (currentPosition[0] + 0)
+        currentPosition[1] = (currentPosition[1] + directionInput[1]) 
     } else if(newDirection === "E") {
-        currentPositionX = (currentPositionX + directionInput[1]) 
-        currentPositionY = (currentPositionY + 0) 
+        currentPosition[0] = (currentPosition[0] + directionInput[1]) 
+        currentPosition[1] = (currentPosition[1] + 0) 
     } else if(newDirection === "S"){
-        currentPositionX = (currentPositionX + 0) 
-        currentPositionY = (currentPositionY - directionInput[1])  
+        currentPosition[0] = (currentPosition[0] + 0) 
+        currentPosition[1] = (currentPosition[1] - directionInput[1])  
     } else if(newDirection === "W"){
-        currentPositionX = (currentPositionX - directionInput[1])
-        currentPositionY = (currentPositionY + 0)  
+        currentPosition[0] = (currentPosition[0] - directionInput[1])
+        currentPosition[1] = (currentPosition[1] + 0)  
     } else { 
         return "wrong newDirection"}
-    return [currentPositionX, currentPositionY];
+    return [currentPosition[0], currentPosition[1]];
 }
 
-console.log(getNewPosition(currentPositionX, currentPositionY, newDirection, directionInput))
+console.log("getNewPosition" + getNewPosition(currentPosition, newDirection, directionInput))// [2,12]
 
 
+let directionInputArray = [["R",2]];
+// eerst directionInputArray[0] + currentDirection + currentPosition --> current direction wordt newDirection
+// daarna directionInputArray[0] + currentDirection + currentPosition
+// 
 
+console.log(currentPosition + "currentPosition")
+
+let mapGetNewDirection = [["R",2]].map(x => 
+    getNewDirection(x, 'S')
+    
+)
+
+console.log('mapGetNewDirection', mapGetNewDirection)
+
+console.log('test   ' + getNewDirection(["R",2], 'W'))
 
 
 
