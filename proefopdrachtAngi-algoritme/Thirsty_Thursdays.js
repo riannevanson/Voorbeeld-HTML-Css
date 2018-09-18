@@ -1,5 +1,3 @@
-console.log('hi')
-
 // Opdrachtomschrijving:
 // Voor onze maandelijkse ‘Thirsty Thursdays’ willen we pizza’s bestellen alleen is er een probleem! 
 // De bezorger is onderweg alleen zijn navigatie is kapot gegaan waardoor hij niet meer weet waar hij is, het enige dat 
@@ -17,21 +15,19 @@ console.log('hi')
 // 2 new-direction (R,2) ---- calculated (N), (E), (S), (W) + number
 // 3 current-position (x,y)
 
-//moet loopen tot 
+// moet loopen tot 
 
 // let currentPosition = [0,0];
 
 // let newDirection = [["L",2],["L",2]]
 
-// when direction is (N) and position is (0,0) and new input is L3 : (W)  (-3, 0)
-
-// cases/if- statements 
+// when direction is (N) and position is (0,0) and new input is L3 : (W)  (-3, 0) in if statements
 
 // reduce, door alles bij elkaar op tellen
 
 /////////////////////------------------getting newdirection------------------///////////////////
 // let newDirection = 0;
-let directionInput = ["0", 6];
+// let directionInput = ["0", 6];
 // let currentDirection = "E";
 
 function getNewDirection(directionInput, currentDirection){
@@ -67,19 +63,41 @@ function getNewDirection(directionInput, currentDirection){
     return newDirection
 }
 
+console.log("getNewDirection must be N   " + getNewDirection(["L", 6], "E"))// "N"
 
-console.log("getNewDirection" + getNewDirection(["L", 6], "E"))// "N"
 
-// inputs: directionInput, currentDirection, currentPosition
+////////////////////---------------getNewDirections from input Array
+
+
+let directionInputArray = [["R",1],["L",4],["L",4]];
+
+// eerst directionInputArray[0] + currentDirection + currentPosition --> current direction wordt newDirection
+// daarna directionInputArray[0] + currentDirection + currentPosition
+// 
+console.log(newDirection, 'newDirection')
+
+let newDirections = directionInputArray.map(x => 
+    x + ", " +
+    getNewDirection(x, newDirection))
+
+   
+
+// let newDirections = directionInputArray.map(x => 
+//     getNewDirection(x, 'S'))
+//     .map(x => getNewPosition(currentPosition, x, directionInput))
+
 
 
 /////////////////////------------------getting newdirection------------------///////////////////
-let currentPosition = [2,6]
-directionInput = ["L", 6];
+
+// inputs: directionInput, currentDirection, currentPosition
+let currentPosition = [0,0];
+let directionInput = ["R", 1];
 
 
 function getNewPosition(currentPosition, newDirection, directionInput){
     if (newDirection === "N"){
+        //if newDirection is North then x ax stays 0 and Y ax goes inputpoints up
         currentPosition[0] = (currentPosition[0] + 0)
         currentPosition[1] = (currentPosition[1] + directionInput[1]) 
     } else if(newDirection === "E") {
@@ -99,22 +117,14 @@ function getNewPosition(currentPosition, newDirection, directionInput){
 console.log("getNewPosition" + getNewPosition(currentPosition, newDirection, directionInput))// [2,12]
 
 
-let directionInputArray = [["R",2]];
-// eerst directionInputArray[0] + currentDirection + currentPosition --> current direction wordt newDirection
-// daarna directionInputArray[0] + currentDirection + currentPosition
-// 
+console.log("getNewPosition two" + getNewPosition(currentPosition, newDirections, directionInput))// [2,12]
 
-console.log(currentPosition + "currentPosition")
 
-let mapGetNewDirection = [["R",2]].map(x => 
-    getNewDirection(x, 'S')
-    
-)
 
-console.log('mapGetNewDirection', mapGetNewDirection)
 
-console.log('test   ' + getNewDirection(["R",2], 'W'))
 
+console.log('newDirections', newDirections)
+console.log('newDirection', newDirection)
 
 
 // ● Stel je komt de volgende borden tegen ​R2​ en L​ 3 ​dit resulteert erin dat je 2
