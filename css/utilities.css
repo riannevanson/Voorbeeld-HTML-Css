@@ -9,3 +9,10 @@
         display: none;
     }
   }
+
+  /* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .u-hidden-tablet {
+        display: none;
+    }
+  }
