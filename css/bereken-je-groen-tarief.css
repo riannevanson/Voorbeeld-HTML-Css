@@ -1,0 +1,22 @@
+
+.bereken-je-groen-tarief--alinea{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 2rem;
+   }
+   
+   .bereken-je-groen-tarief--line{
+   height: 0.21rem;
+   background-color: #E0E6EC;
+   }
+   
+   .bereken-je-groen-tarief--undertitle{
+       font-size: 1.42rem;
+   }
+   
+   .bereken-je-groen-tarief__btn-numbers-wrapper{
+   display: flex;
+   align-items: center;
+   }
+   

@@ -1,0 +1,11 @@
+.u-hidden{
+    display: none;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .u-hidden-mobile {
+        display: none;
+    }
+  }

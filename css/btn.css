@@ -1,0 +1,39 @@
+.btn{
+    height: 3.58rem;
+    background: #ffce00; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffce00 0%, #fbc600 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffce00 0%,#fbc600 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffce00 0%,#fbc600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce00', endColorstr='#fbc600',GradientType=0 ); /* IE6-9 */
+    border-radius: 0.33rem;
+    -webkit-box-shadow: 0 0.08rem 0.17rem 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0.08rem 0.17rem 0 rgba(0,0,0,0.4);
+    box-shadow: 0 0.08rem 0.17rem 0rem rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+.btn__txt{
+    font-family: dax-medium;
+    font-size: 1.5rem;
+    padding-top: 0.6rem;
+    color: #725A07;
+}
+
+.btn--choice{
+    background: #DCE4FE;
+    color: #3F9D74;
+    font-size: 2rem;
+    flex-grow: 1;
+    align-content: center;
+    align-items: center;
+    height: 4.17rem;
+}
+
+.btn--active{
+    background: #A5CD39;
+    color: #ffffff;
+    height: 5rem;
+    align-items: center;
+}

@@ -1,0 +1,124 @@
+
+.banner-wrapper{ 
+    display: flex;
+    flex-direction: column;
+    height: 48.58rem;
+    width: 100%;
+ }
+ 
+ .banner-top{
+     height: 33.33rem;
+     background-color: #D3EEFB;
+     display: flex; 
+ }
+ 
+ .banner-bottom{
+     box-sizing: border-box;
+     height: 15.25rem;
+     width: 100%;
+     background-image: linear-gradient(-90deg, #008442 0%, #9ECC2B 100%);
+     position: absolute; 
+     top: 33.33rem;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding-right: 13.5rem;  
+  }
+ 
+  .banner-bottom__txt-wrapper{
+      width: 23.25rem;
+      height: 8.33rem;
+  }
+  .banner-bottom__txt{
+      color: #ffffff;
+      line-height: 2.08rem;
+      font-size: 1.33rem;
+ 
+  }
+ 
+ .banner-tree{
+   display: block;
+   background-image: url("images/header.png");
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   height: 24rem;
+   width: 19.42rem;
+   align-self: flex-end;
+   margin-left: 11.08rem;
+ }
+ 
+ 
+ .bereken-je-groen-tarief-wrapper{
+     display: flex;
+     flex-direction: column;
+     background-color: #FFFFFF;
+     height: 33.33rem;
+     width: 40.25rem;
+     box-shadow: 0 0.08rem 0.67rem 0 #CCCECE;
+     z-index: 999;
+     margin-left: 11.92rem; 
+     margin-top: 8.33rem;
+     padding: 2rem;
+     box-sizing: border-box;
+     justify-content:space-between;
+ 
+ }
+ 
+ 
+ 
+ .kies-je-product{
+     display: block;
+     box-sizing: border-box;
+     width:100%;
+     padding-top: 3.3rem;
+ 
+ }
+ 
+ .kies-je-product__title{
+     font-size: 2rem;
+ } 
+ 
+ .kies-je-product-card-wrapper{
+     width: 100%;
+     height: 43.33rem;
+     margin-top: 3.3rem;
+     margin-bottom: 10rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: flex-end;
+ }
+ 
+ 
+ /* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .banner-top{
+        display: flex; 
+        justify-content: center;
+        width:100%;
+    }
+    .bereken-je-groen-tarief-wrapper{
+    margin: 2rem;
+    margin-top: 2rem;
+    width: 32rem;
+    }
+
+    .banner-bottom{
+        align-items: center;
+       padding-right: 0;
+       justify-content: center;
+    }
+
+    .kies-je-product-card-wrapper{
+        width: 100%;
+        margin-top: 3.3rem;
+        margin-bottom: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+  }
