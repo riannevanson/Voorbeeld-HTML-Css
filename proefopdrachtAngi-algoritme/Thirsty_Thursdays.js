@@ -30,40 +30,44 @@ console.log('hi')
 // reduce, door alles bij elkaar op tellen
 
 /////////////////////------------------getting newdirection------------------///////////////////
-let newDirection = 0;
-let directionInput = ["L", 4];
-let currentDirection = "E";
+// let newDirection = 0;
+// let directionInput = ["L", 4];
+// let currentDirection = "E";
 
-switch(directionInput[0] && currentDirection) {
-    case "L" && "N":
-        newDirection = "W";
-    break;
-    case "L" && "E":
-        newDirection = "S";
-    break;
-    case "L" && "S":
-        newDirection = "E";
-    break;
-    case "L" && "W":
-        newDirection = "N";
-    break;
-    case "R" && "N":
-        newDirection = "E";
-    break;
-    case "R" && "E":
-        newDirection = "S";
-    break; 
-    case "R" && "S":
-        newDirection = "W";
-    break;
-    case "R" && "W":
-        newDirection = "N";
-    break;
-    default:
-        newDirection = 'no Direction';
+function getNewDirection(directionInput, currentDirection){
+    switch(directionInput[0] && currentDirection) {
+        case "L" && "N":
+            newDirection = "W";
+        break;
+        case "L" && "E":
+            newDirection = "S";
+        break;
+        case "L" && "S":
+            newDirection = "E";
+        break;
+        case "L" && "W":
+            newDirection = "N";
+        break;
+        case "R" && "N":
+            newDirection = "E";
+        break;
+        case "R" && "E":
+            newDirection = "S";
+        break; 
+        case "R" && "S":
+            newDirection = "W";
+        break;
+        case "R" && "W":
+            newDirection = "N";
+        break;
+        default:
+            newDirection = 'no Direction';
+    }
+    return newDirection
 }
 
-console.log(newDirection)
+
+console.log(getNewDirection(["R", 4], "W"))
 
 
 
