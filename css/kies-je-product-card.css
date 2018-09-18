@@ -120,7 +120,7 @@ span{
     }
     
     /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
     .kies-je-product-card{
         margin-bottom: 2rem;
         width: 30rem;

@@ -22,7 +22,7 @@ article{
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
     html {
       font-size: 10px;
     }
