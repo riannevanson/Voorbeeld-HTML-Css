@@ -9,21 +9,51 @@
 // Bereken hoeveel blokken de bezorger momenteel verwijderd is van Angi Studio.
 // Voorbeeld:
 
+// ● Stel je komt de volgende borden tegen ​["R",2]​ en L​ 3 ​dit resulteert erin dat je 2
+// blokken oost bent verwijderd en 3 noord, wat resulteert in een totaal van ​5
+// blokken​.
+
+
+
+// ● ["L",2], ["L",2], ["L",2] ​betekent dat je zuid 2​ blokken​ bent verwijderd van je
+// startpositie.
+// ● ["R",5], ["L",5], ["R",5], R3​ is 1​ 2 blokken​.
+// Borden die je onderweg tegenkomt:
+
+
+
+// directionInputArray = [["R",2], ["L",3], ["R",2], ["R",4], ["L",2], ["L",1], ["R",2], ["R",4], ["R",1], ["L",4], ["L",5], ["R",5], ["R",5], ["R",2], ["R",2], ["R",1], ["L",2],["L",3], ["L",2],
+// ["L",1], ["R",3], ["L",5], ["R",187], ["R",1], ["R",4], ["L",1], ["R",5], ["L",3], ["L",4], ["R",50], ["L",4], ["R",2],["R",70], ["L",3], ["L",2], ["R",4], ["R",3],
+// ["R",194] ,["L",3], ["L",4], ["L",4], ["L",3], ["L",4], ["R",4], ["R",5], ["L",1], ["L",5], ["L",4], ["R",1], ["L",2], ["R",4], ["L",5], ["L",3], ["R",4], ["L",5], ["L",5],
+// ["R",5], ["R",3], ["R",5], ["L",2], ["L",4], ["R",4], ["L",1], ["R",3], ["R",1], ["L",1], ["L",2], ["R",2], ["R",2], ["L",3], ["R",3], ["R",2], ["R",5], ["R",2], ["R",5],
+// ["L",3], ["R",2], ["L",5], ["R",1], ["R",2], ["R",2], ["L",4], ["L",5], ["L",1], ["L",4], ["R",4], ["R",3], ["R",1], ["R",2], ["L",1], ["L",2], ["R",4], ["R",5], ["L",2],
+// ["R",3], ["L",4], ["L",5], ["L",5], ["L",4], ["R",4], ["L",2], ["R",1], ["R",1], ["L",2], ["L",3], ["L",2], ["R",2], ["L",4], ["R",3], ["R",2], ["L",1], ["L",3], ["L",2],
+// ["L",4], ["L",4], ["R",2], ["L",3], ["L",3], ["R",2], ["L",4], ["L",3], ["R",4], ["R",3], ["L",2], ["L",1], ["L",4], ["R",4], ["R",2], ["L",4], ["L",4], ["L",5], ["L",1],
+// ["R",2], ["L",5], ["L",2], ["L",3], ["R",2], ["L",2]]
+//  -------------------------Preparation--------------------------------------------------------------------------
+
 // drie inputs nodig: 
 
 // 1 current-direction (N) (E) (S) (W)
 // 2 new-direction (R,2) ---- calculated (N), (E), (S), (W) + number
 // 3 current-position (x,y)
 
-// moet loopen tot 
+// moet loopen/map/itereren
 
 // let currentPosition = [0,0];
 
 // let newDirection = [["L",2],["L",2]]
 
-// when direction is (N) and position is (0,0) and new input is L3 : (W)  (-3, 0) in if statements
+// when direction is (N) and position is (0,0) and new input is ["L",3] : (W)  (-3, 0) in if statements
 
-// reduce, door alles bij elkaar op tellen
+// * bereken de huidige richting van enkele value met if/switch statement
+// * bereken de huidige richting van array
+// * bereken de coordinaat veranderingen met if statement
+// * itereer met 'huidige richting' en de nieuwe coordinaten, de nieuwe coordinaten
+// * laatste coordinaten optellen voor kortste route
+
+
+
 
 /////////////////////------------------getting newdirection------------------///////////////////
 // let newDirection = 0;
@@ -58,7 +88,7 @@ function getNewDirection(directionInput, currentDirection){
             newDirection = "N";
         break;
         default:
-            newDirection = 'no Direction';
+            newDirection = 'N';
     }
     return newDirection
 }
@@ -69,79 +99,64 @@ console.log("getNewDirection must be N   " + getNewDirection(["L", 6], "E"))// "
 ////////////////////---------------getNewDirections from input Array
 
 
-let directionInputArray = [["R",1],["L",4],["L",4]];
-
-// eerst directionInputArray[0] + currentDirection + currentPosition --> current direction wordt newDirection
-// daarna directionInputArray[0] + currentDirection + currentPosition
-// 
-console.log(newDirection, 'newDirection')
-
-let newDirections = directionInputArray.map(x => 
-    x + ", " +
-    getNewDirection(x, newDirection))
-
-   
-
-// let newDirections = directionInputArray.map(x => 
-//     getNewDirection(x, 'S'))
-//     .map(x => getNewPosition(currentPosition, x, directionInput))
+let directionInputArray = [["R",2], ["L",3], ["R",2], ["R",4], ["L",2], ["L",1], ["R",2], ["R",4], ["R",1], ["L",4], ["L",5], ["R",5], ["R",5], ["R",2], ["R",2], ["R",1], ["L",2],["L",3], ["L",2],
+["L",1], ["R",3], ["L",5], ["R",187], ["R",1], ["R",4], ["L",1], ["R",5], ["L",3], ["L",4], ["R",50], ["L",4], ["R",2],["R",70], ["L",3], ["L",2], ["R",4], ["R",3],
+["R",194] ,["L",3], ["L",4], ["L",4], ["L",3], ["L",4], ["R",4], ["R",5], ["L",1], ["L",5], ["L",4], ["R",1], ["L",2], ["R",4], ["L",5], ["L",3], ["R",4], ["L",5], ["L",5],
+["R",5], ["R",3], ["R",5], ["L",2], ["L",4], ["R",4], ["L",1], ["R",3], ["R",1], ["L",1], ["L",2], ["R",2], ["R",2], ["L",3], ["R",3], ["R",2], ["R",5], ["R",2], ["R",5],
+["L",3], ["R",2], ["L",5], ["R",1], ["R",2], ["R",2], ["L",4], ["L",5], ["L",1], ["L",4], ["R",4], ["R",3], ["R",1], ["R",2], ["L",1], ["L",2], ["R",4], ["R",5], ["L",2],
+["R",3], ["L",4], ["L",5], ["L",5], ["L",4], ["R",4], ["L",2], ["R",1], ["R",1], ["L",2], ["L",3], ["L",2], ["R",2], ["L",4], ["R",3], ["R",2], ["L",1], ["L",3], ["L",2],
+["L",4], ["L",4], ["R",2], ["L",3], ["L",3], ["R",2], ["L",4], ["L",3], ["R",4], ["R",3], ["L",2], ["L",1], ["L",4], ["R",4], ["R",2], ["L",4], ["L",4], ["L",5], ["L",1],
+["R",2], ["L",5], ["L",2], ["L",3], ["R",2], ["L",2]];
+console.log(directionInputArray, 'directionInputArray')//(4) [Array(2), Array(2), Array(2), Array(2)]
 
 
+let newDirections = // newDirection wordt ingezet bij elke nieuwe iteratie. Output: array van [directionInput en newDirection]
+    directionInputArray.map(x => [ x[0], x[1],getNewDirection(x, newDirection) ])
+ 
 
-/////////////////////------------------getting newdirection------------------///////////////////
+/////////////////////------------------getting newPosition------------------///////////////////
 
 // inputs: directionInput, currentDirection, currentPosition
 let currentPosition = [0,0];
-let directionInput = ["R", 1];
+// let directionInput = ["R", 1];
 
 
-function getNewPosition(currentPosition, newDirection, directionInput){
-    if (newDirection === "N"){
+function getNewPosition(currentPosition, newDirections){
+    if (newDirections[2] === "N"){
         //if newDirection is North then x ax stays 0 and Y ax goes inputpoints up
         currentPosition[0] = (currentPosition[0] + 0)
-        currentPosition[1] = (currentPosition[1] + directionInput[1]) 
-    } else if(newDirection === "E") {
-        currentPosition[0] = (currentPosition[0] + directionInput[1]) 
+        currentPosition[1] = (currentPosition[1] + newDirections[1]) 
+    } else if(newDirections[2] === "E") {
+        currentPosition[0] = (currentPosition[0] + newDirections[1]) 
         currentPosition[1] = (currentPosition[1] + 0) 
-    } else if(newDirection === "S"){
+    } else if(newDirections[2] === "S"){
         currentPosition[0] = (currentPosition[0] + 0) 
-        currentPosition[1] = (currentPosition[1] - directionInput[1])  
-    } else if(newDirection === "W"){
-        currentPosition[0] = (currentPosition[0] - directionInput[1])
+        currentPosition[1] = (currentPosition[1] - newDirections[1])  
+    } else if(newDirections[2] === "W"){
+        currentPosition[0] = (currentPosition[0] - newDirections[1])
         currentPosition[1] = (currentPosition[1] + 0)  
     } else { 
-        return "wrong newDirection"}
+        return "N"}
     return [currentPosition[0], currentPosition[1]];
 }
 
-console.log("getNewPosition" + getNewPosition(currentPosition, newDirection, directionInput))// [2,12]
+////////////////-------------------getting array of all new positions--------------------///////////
+
+let newPositions = newDirections.map(x => [getNewPosition(currentPosition, x)]) //Output array of currentPositions
+
+///////////////--------------------check yourself before you wreck yourself--------------------
+
+// console.log("getNewPosition" + getNewPosition([0,0], ["R", 2, "E"]))// [2,12]
+console.log("newPostions: " + newPositions)
+// console.log('newDirections', newDirections)
+// console.log('newDirection', newDirection)
+
+/////////////---------------------Final distance--------------------------------/////////////
+
+let lastCoordinates = (newPositions.slice(-1)[0])
+
+let finalDistance = (lastCoordinates[0]) + (lastCoordinates[1])
+console.log("FINALDISTANCE" + finalDistance)
+// console.log("lastNewPosition: " + newPositions.slice(-1)[0])// -123,-123
 
 
-console.log("getNewPosition two" + getNewPosition(currentPosition, newDirections, directionInput))// [2,12]
-
-
-
-
-
-console.log('newDirections', newDirections)
-console.log('newDirection', newDirection)
-
-
-// ● Stel je komt de volgende borden tegen ​R2​ en L​ 3 ​dit resulteert erin dat je 2
-// blokken oost bent verwijderd en 3 noord, wat resulteert in een totaal van ​5
-// blokken​.
-
-
-
-// ● L2, L2, L2 ​betekent dat je zuid 2​ blokken​ bent verwijderd van je
-// startpositie.
-// ● R5, L5, R5, R3​ is 1​ 2 blokken​.
-// Borden die je onderweg tegenkomt:
-// R2, L3, R2, R4, L2, L1, R2, R4, R1, L4, L5, R5, R5, R2, R2, R1, L2, L3, L2,
-// L1, R3, L5, R187, R1, R4, L1, R5, L3, L4, R50, L4, R2, R70, L3, L2, R4, R3,
-// R194, L3, L4, L4, L3, L4, R4, R5, L1, L5, L4, R1, L2, R4, L5, L3, R4, L5, L5,
-// R5, R3, R5, L2, L4, R4, L1, R3, R1, L1, L2, R2, R2, L3, R3, R2, R5, R2, R5,
-// L3, R2, L5, R1, R2, R2, L4, L5, L1, L4, R4, R3, R1, R2, L1, L2, R4, R5, L2,
-// R3, L4, L5, L5, L4, R4, L2, R1, R1, L2, L3, L2, R2, L4, R3, R2, L1, L3, L2,
-// L4, L4, R2, L3, L3, R2, L4, L3, R4, R3, L2, L1, L4, R4, R2, L4, L4, L5, L1,
-// R2, L5, L2, L3, R2, L2
