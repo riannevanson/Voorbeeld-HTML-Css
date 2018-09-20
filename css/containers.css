@@ -5,61 +5,22 @@
     height: 48.58rem;
     width: 100vw;
  }
+
  
- .banner-top{
-     height: 33.33rem;
-     background-color: #D3EEFB;
-     display: flex; 
- }
- 
- .banner-bottom{
-     box-sizing: border-box;
-     height: 15.25rem;
-     width: 100%;
-     background-image: linear-gradient(-90deg, #008442 0%, #9ECC2B 100%);
-     position: absolute; 
-     top: 33.33rem;
-     display: flex;
-     justify-content: flex-end;
-     align-items: center;
-     padding-right: 13.5rem;  
-  }
- 
-  .banner-bottom__txt-wrapper{
-      width: 23.25rem;
-      height: 8.33rem;
-  }
-  .banner-bottom__txt{
-      color: #ffffff;
-      line-height: 2.08rem;
-      font-size: 1.33rem;
- 
-  }
- 
- .banner-tree{
-   display: block;
-   background-image: url("images/header.png");
-   background-position: center; 
-   background-repeat: no-repeat; 
-   background-size: cover;
-   height: 24rem;
-   width: 19.42rem;
-   align-self: flex-end;
-   margin-left: 11.08rem;
- }
  
  
  .box-wrapper{
+    position: absolute;
      display: flex;
      flex-direction: column;
      background-color: #FFFFFF;
-     height: 33.33rem;
-     width: 40.25rem;
+     width: 483px;
      box-shadow: 0 0.08rem 0.67rem 0 #CCCECE;
      z-index: 999;
-     margin-left: 11.92rem; 
-     margin-top: 8.33rem;
+     margin-left: 11.92%; 
+     margin-top: 8.33%;
      padding: 2rem;
+     border-radius: 0.33rem;
      box-sizing: border-box;
      justify-content:space-between;
  
@@ -93,13 +54,15 @@
   /* Tablet Styles */
   @media only screen and (min-width: 415px) and (max-width: 1024px) {
 
+  
+
     .banner-top{
         display: flex; 
         justify-content: center;
-        width:100%;
+        width:100vw;
     }
 
-    .section-wrapper{
+    .box-wrapper{
         margin: 2rem;
         margin-top: 2rem;
         width: 40rem;
@@ -108,6 +71,7 @@
     .banner-bottom{
         align-items: center;
        padding-right: 2rem;
+       width:100vw;
        /* justify-content: center;
        text-align: center; */
     }
@@ -117,23 +81,16 @@
  
  /* Mobile Styles */
 @media only screen and (max-width: 415px) {
-    .banner-top{
-        display: flex; 
-        justify-content: center;
-        width:100%;
-    }
-    .section-wrapper{
+  
+
+
+    .box-wrapper{
     margin: 2rem;
     margin-top: 2.5rem;
     width: 32rem;
     }
 
-    .banner-bottom{
-        align-items: center;
-       padding-right: 0;
-       justify-content: center;
-    }
-
+   
     .card-wrapper{
         width: 100%;
         margin-top: 3.3rem;

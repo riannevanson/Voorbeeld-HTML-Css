@@ -6,6 +6,15 @@
     margin-left: 0.4rem;
     border-radius: 0.33rem;
     box-shadow: 0 0.08rem 0.67rem 0 #CCCECE;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.card:hover {
+  
+    transform: scale(1.05);
 }
 
 .card--highlighted{
@@ -132,5 +141,3 @@ span{
     }
   }
 
-
-   

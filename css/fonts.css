@@ -32,6 +32,16 @@
 
 }
 
+
+h1{
+    font-size: 1.75rem;  
+    color: #666666;
+   margin:0;
+   padding:0;
+   font-family: dax-bold;
+}
+
+
 .txt--light{
     font-family: dax-light;
 }
