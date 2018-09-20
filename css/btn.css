@@ -21,17 +21,39 @@
     color: #725A07;
 }
 
+label{
+    font-family: dax-medium;
+    font-size: 1.5rem;
+    padding-top: 0.6rem;
+    color: #725A07;
+}
+
+input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+
+  input[type=radio]:checked + label{
+    background: #A5CD39;
+    color: #ffffff;
+    height: 5rem;
+    align-items: center;
+
+  }
+
 .btn--choice{
-    background: #DCE4FE;
+    background: #F7FAFF;
     color: #3F9D74;
     font-size: 2rem;
     flex-grow: 1;
     align-content: center;
     align-items: center;
     height: 4.17rem;
+    width: 5rem;
 }
 
-.btn--active{
+.btn--choice:focus{
     background: #A5CD39;
     color: #ffffff;
     height: 5rem;

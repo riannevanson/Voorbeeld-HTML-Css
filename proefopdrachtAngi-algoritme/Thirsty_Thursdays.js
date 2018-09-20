@@ -142,12 +142,13 @@ function getNewPosition(currentPosition, newDirections){
 
 ////////////////-------------------getting array of all new positions--------------------///////////
 
-let newPositions = newDirections.map(x => [getNewPosition(currentPosition, x)]) //Output array of currentPositions
+let newPositions = newDirections.map(x => getNewPosition(currentPosition, x)) //Output array of currentPositions
 
 ///////////////--------------------check yourself before you wreck yourself--------------------
 
 // console.log("getNewPosition" + getNewPosition([0,0], ["R", 2, "E"]))// [2,12]
-console.log("newPostions: " + newPositions)
+console.log("newPostions: " + [newPositions])
+console.log("newPostions length: " + newPositions.length)
 // console.log('newDirections', newDirections)
 // console.log('newDirection', newDirection)
 
@@ -155,8 +156,8 @@ console.log("newPostions: " + newPositions)
 
 let lastCoordinates = (newPositions.slice(-1)[0])
 
-let finalDistance = (lastCoordinates[0]) + (lastCoordinates[1])
-console.log("FINALDISTANCE" + finalDistance)
+let finalDistance = (Math.abs(lastCoordinates[0]) + Math.abs(lastCoordinates[1]))
+console.log("FINALDISTANCE  " + finalDistance)
 // console.log("lastNewPosition: " + newPositions.slice(-1)[0])// -123,-123
-
+// console.log("FINALDISTANCE  " + finalDistance) === 246
 

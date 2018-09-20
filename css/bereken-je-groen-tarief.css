@@ -1,11 +1,14 @@
 
-.bereken-je-groen-tarief--alinea{
+   
+.bereken-je-groen-tarief--alinea .box--alinea{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     line-height: 2rem;
+    padding-left: 2rem;
    }
-   
+
+
    .bereken-je-groen-tarief--line{
    height: 0.21rem;
    background-color: #E0E6EC;
