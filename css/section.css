@@ -1,6 +1,6 @@
 
    
-.bereken-je-groen-tarief--alinea .box--alinea{
+.section--alinea .box--alinea{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -9,16 +9,16 @@
    }
 
 
-   .bereken-je-groen-tarief--line{
+   .section--line{
    height: 0.21rem;
    background-color: #E0E6EC;
    }
    
-   .bereken-je-groen-tarief--undertitle{
+   .section--undertitle{
        font-size: 1.42rem;
    }
    
-   .bereken-je-groen-tarief__btn-numbers-wrapper{
+   .section__btn-numbers-wrapper{
    display: flex;
    align-items: center;
    }

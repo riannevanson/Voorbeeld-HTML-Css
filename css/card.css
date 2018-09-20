@@ -1,4 +1,4 @@
-.kies-je-product-card{
+.card{
     height: 40.58rem;
     width: 24.75rem;
     background-color: #F9FCFD;
@@ -8,18 +8,18 @@
     box-shadow: 0 0.08rem 0.67rem 0 #CCCECE;
 }
 
-.kies-je-product-card--highlighted{
+.card--highlighted{
     height: 43.33rem;
     border-width: 0.08rem;
     border-color: #0099DC;
     border-style: solid;
 }
 
-.kies-je-product-card--transparent{
+.card--transparent{
    opacity: 0.35;  
 }
 
-.kies-je-product-card__img{
+.card__img{
     background-image: url("images/groen-uit-nederland.png");
     height: 9.25rem;
     background-position: center; 
@@ -27,17 +27,17 @@
     background-size: cover;
 }
 
-.kies-je-product-card--higlighted__img{
+.card--higlighted__img{
     height: 12rem;
     background-image: url("images/wind-uit-nederland.png");
 }
 
-.kies-je-product-card--transparent__img{
+.card--transparent__img{
     background-image: url("images/wind-met-boks.png");
 }
 
 
-.kies-je-product-card__contentwrapper{
+.card__contentwrapper{
     padding: 2rem;
     display: flex;
     flex-direction: column;  
@@ -45,15 +45,15 @@
     justify-content: space-between;  
 }
 
-.kies-je-product-card__txt--title{
+.card__txt--title{
     padding-bottom: 0.58rem;
 }
 
-.kies-je-product-card__txt--alinea{
+.card__txt--alinea{
     padding-bottom: 2.58rem;
 }
 
-.kies-je-product-card__txt-bedrag-termijn-wrapper{
+.card__txt-bedrag-termijn-wrapper{
     display:flex;
     justify-content: space-between;
     padding-bottom: 1.58rem;
@@ -61,24 +61,24 @@
 
 }
 
-.kies-je-product-card__txt-bedrag-wrapper{
+.card__txt-bedrag-wrapper{
     display:flex;
     flex-direction: column;
 
 }
 
-.kies-je-product-card__txt-termijn-wrapper{
+.card__txt-termijn-wrapper{
     display:flex;
     flex-direction: column;
 }
 
 
-.kies-je-product-card__txt--per-jaar{
+.card__txt--per-jaar{
     font-size: 1.17rem;
     padding-bottom: 1rem;
 }
 
-.kies-je-product-card__txt--maandelijks{
+.card__txt--maandelijks{
     font-size: 1.17rem;
     color:  #9B9B9B;
 }
@@ -88,30 +88,30 @@ span{
     font-size: 1.33rem;
     color: #9B9B9B;
 }
-.kies-je-product-card__txt-bedrag-maandelijks{
+.card__txt-bedrag-maandelijks{
     text-align: right;  
     color: #666666;  
 }
 
-.kies-je-product-card__txt-bedrag-jaar{
+.card__txt-bedrag-jaar{
     text-align: right;
     padding-bottom: 0.5rem;
     color: #9B9B9B;
 }
 
-.kies-je-product-card__btn{
+.card__btn{
     display:flex;
     justify-content: center;
     margin-bottom: 1.17rem;
 }
 
-.kies-je-product-card__meer-informatie-wrapper{
+.card__meer-informatie-wrapper{
     display: flex;
     flex-direction: column;
     text-align: center;
     }
     
-    .kies-je-product-card__meer-informatie__txt{
+    .card__meer-informatie__txt{
         text-decoration: underline;
         color: #007D46;
         font-family: dax-medium;
@@ -121,13 +121,13 @@ span{
     
     /* Mobile Styles */
 @media only screen and (max-width: 415px) {
-    .kies-je-product-card{
+    .card{
         margin-bottom: 2rem;
         width: 30rem;
     }
 
 
-    .kies-je-product-card--highlighted{ 
+    .card--highlighted{ 
     order: -1;
     }
   }

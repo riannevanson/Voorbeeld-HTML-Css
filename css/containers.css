@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     height: 48.58rem;
-    width: 100%;
+    width: 100vw;
  }
  
  .banner-top{
@@ -49,7 +49,7 @@
  }
  
  
- .bereken-je-groen-tarief-wrapper{
+ .box-wrapper{
      display: flex;
      flex-direction: column;
      background-color: #FFFFFF;
@@ -67,7 +67,7 @@
  
  
  
- .kies-je-product{
+ .section-title{
      display: block;
      box-sizing: border-box;
      width:100%;
@@ -79,7 +79,7 @@
      font-size: 2rem;
  } 
  
- .kies-je-product-card-wrapper{
+ .card-wrapper{
      width: 100%;
      height: 43.33rem;
      margin-top: 3.3rem;
@@ -99,7 +99,7 @@
         width:100%;
     }
 
-    .bereken-je-groen-tarief-wrapper{
+    .section-wrapper{
         margin: 2rem;
         margin-top: 2rem;
         width: 40rem;
@@ -122,7 +122,7 @@
         justify-content: center;
         width:100%;
     }
-    .bereken-je-groen-tarief-wrapper{
+    .section-wrapper{
     margin: 2rem;
     margin-top: 2.5rem;
     width: 32rem;
@@ -134,7 +134,7 @@
        justify-content: center;
     }
 
-    .kies-je-product-card-wrapper{
+    .card-wrapper{
         width: 100%;
         margin-top: 3.3rem;
         margin-bottom: 10rem;

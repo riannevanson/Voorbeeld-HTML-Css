@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/containers.css" />
-    <link rel="stylesheet" type="text/css" href="css/bereken-je-groen-tarief.css" />
+    <link rel="stylesheet" type="text/css" href="css/section.css" />
     <link rel="stylesheet" type="text/css" href="css/btn.css" />
-    <link rel="stylesheet" type="text/css" href="css/kies-je-product-card.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
     <link rel="stylesheet" type="text/css" href="css/utilities.css" />
     <script src="proefopdrachtAngi-algoritme/Thirsty_Thursdays.js"></script>
 </head>
@@ -18,23 +18,23 @@
     <article>
         <div class="banner-wrapper">
             <div class="banner-top">
-                <div class="bereken-je-groen-tarief-wrapper">
-                    <div class="bereken-je-groen-tarief--title txt--title">
+                <div class="box-wrapper">
+                    <div class="section--title txt--title">
                         Wij dromen ervan dat iedereen zijn eigen energieleverancier wordt. Goed voor jou én voor de aarde
                     </div>
-                    <div class="bereken-je-groen-tarief--alinea txt--regular">
+                    <div class="section--alinea txt--regular">
                     <ul class="box--alinea">
                             <li>Beste uit de test 2015 volgens Consumentenbond</li>
                             <li>Altijd scherpe tarieven</li>
                             <li>Zelf zaken regelen in Mijn dossier</li>
                     </ul>
                     </div>
-                    <div class="bereken-je-groen-tarief--line"></div>
-                    <div class="bereken-je-groen-tarief--undertitle txt--title">
+                    <div class="section--line"></div>
+                    <div class="section--undertitle txt--title">
                             Hoeveel personen wonen er in huis?
                     </div>
                     <form>
-                        <div class="bereken-je-groen-tarief__btn-numbers-wrapper">
+                        <div class="section__btn-numbers-wrapper">
 
                                 <input type="radio" id="option-one" name="selector" ><label class="btn btn--choice txt--medium" for="option-one">1</label>
                                 <input type="radio" id="option-two" name="selector" checked><label class="btn btn--choice txt--medium"for="option-two">2</label>
@@ -42,7 +42,7 @@
                                 <input type="radio" id="option-four" name="selector"><label class="btn btn--choice txt--medium" for="option-four">4</label>
                                 <input type="radio" id="option-five" name="selector"><label class="btn btn--choice txt--medium" for="option-five">5</label>
                         </div>
-                        <input type="button" class="btn btn__txt" value="Bereken je groene energietarief ›">
+                        <input onClick="window.location.href='proefopdrachtAngi.html'" type="submit" class="btn btn__txt" value="Bereken je groene energietarief ›">
                     </form>  
                                 
                             
@@ -63,122 +63,112 @@
                 </div>
             </div>
         </div>
-        <div class="kies-je-product">
+        <section class="section-title">
             <div class="kies-je-product__title txt__align--center txt--medium">
                 Kies je product
             </div>
-            <div class="kies-je-product-card-wrapper">
-                    <div class="kies-je-product-card kies-je-product-card--normal">
-                        <div class="kies-je-product-card__img"></div>
-                        <div class="kies-je-product-card__contentwrapper">
-                            <div class="kies-je-product-card__txt--title txt--title">
+            <div class="card-wrapper">
+                    <div class="card card--normal">
+                        <div class="card__img"></div>
+                        <div class="card__contentwrapper">
+                            <div class="card__txt--title txt--title">
                                 Groen uit Nederland
                             </div>
-                            <div class="kies-je-product-card__txt--alinea txt--regular">
+                            <div class="card__txt--alinea txt--regular">
                                     50% groene stroom uit biovergisters, 50% uit windmolens en bosgecompenseerd gas
                             </div>
-                            <div class="kies-je-product-card__txt-bedrag-termijn-wrapper">
-                                <div class="kies-je-product-card__txt-termijn-wrapper txt--regular">
-                                    <div class=" kies-je-product-card__txt--per-jaar">
+                            <div class="card__txt-bedrag-termijn-wrapper">
+                                <div class="card__txt-termijn-wrapper txt--regular">
+                                    <div class=" card__txt--per-jaar">
                                         per jaar
                                     </div>
                                     <div>
                                         maandelijks
                                     </div>
                                 </div>
-                                <div class="kies-je-product-card__txt-bedrag-wrapper txt--regular">
-                                    <div class="kies-je-product-card__txt-bedrag-jaar">
+                                <div class="card__txt-bedrag-wrapper txt--regular">
+                                    <div class="card__txt-bedrag-jaar">
                                         € 1320.00
                                     </div>
-                                    <div class="kies-je-product-card__txt-bedrag-maandelijks txt--title">
+                                    <div class="card__txt-bedrag-maandelijks txt--title">
                                         <span>€</span> 110,00
                                     </div>
                                 </div>
                             </div>
-                            <button href="#" class="btn btn__txt kies-je-product-card__btn">
-                                <div class="btn__txt">
-                                    Kies dit Pakket >
-                                </div>
-                            </button>
-                            <div class="kies-je-product-card__meer-informatie-wrapper">
-                                <a href="#" class="kies-je-product-card__meer-informatie__txt txt--medium">TarievenSpecificatie</a>
-                                <a href="#" class="kies-je-product-card__meer-informatie__txt txt--medium">Meer informatie</a>
+                            <input onClick="window.location.href='proefopdrachtAngi.html'" type="submit" Value="Kies dit Pakket >" class="btn btn__txt card__btn">
+                            
+                            
+                            <div class="card__meer-informatie-wrapper">
+                                <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">TarievenSpecificatie</a>
+                                <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">Meer informatie</a>
                             </div>
                         </div>
                     </div>
-                    <div class="kies-je-product-card kies-je-product-card--highlighted">
-                        <div class="kies-je-product-card__img kies-je-product-card--higlighted__img"></div>
-                        <div class="kies-je-product-card__contentwrapper">
-                            <div class="kies-je-product-card__txt--title txt--title">
+                    <div class="card card--highlighted">
+                        <div class="card__img card--higlighted__img"></div>
+                        <div class="card__contentwrapper">
+                            <div class="card__txt--title txt--title">
                                 Wind uit Nederland
                             </div>
-                            <div class="kies-je-product-card__txt--alinea txt--regular">
+                            <div class="card__txt--alinea txt--regular">
                                 100% groene stroom uit Nederlandse windmolens en bosgecompenseerd gas.
                             </div>
-                            <div class="kies-je-product-card__txt-bedrag-termijn-wrapper txt--regular">
-                                    <div class="kies-je-product-card__txt-termijn-wrapper">
-                                        <div class="kies-je-product-card__txt--per-jaar">
+                            <div class="card__txt-bedrag-termijn-wrapper txt--regular">
+                                    <div class="card__txt-termijn-wrapper">
+                                        <div class="card__txt--per-jaar">
                                             per jaar
                                         </div>
                                         <div>
                                             maandelijks
                                         </div>
                                     </div>
-                                    <div class="kies-je-product-card__txt-bedrag-wrapper">
-                                        <div class="kies-je-product-card__txt-bedrag-jaar">
+                                    <div class="card__txt-bedrag-wrapper">
+                                        <div class="card__txt-bedrag-jaar">
                                             € 1320.00
                                         </div>
-                                        <div class="kies-je-product-card__txt-bedrag-maandelijks txt--title">
+                                        <div class="card__txt-bedrag-maandelijks txt--title">
                                             <span>€</span> 110,00
                                         </div>
                                     </div>
                                 </div>
-                                <button href="#" class="btn btn__txt kies-je-product-card__btn">
-                                    <div class="btn__txt">
-                                        Kies dit Pakket >
-                                    </div>
-                                </button>
-                                <div class="kies-je-product-card__meer-informatie-wrapper">
-                                    <a href="#" class="kies-je-product-card__meer-informatie__txt txt--medium">TarievenSpecificatie</a>
-                                    <a href="#" class="kies-je-product-card__meer-informatie__txt txt--medium">Meer informatie</a>
+                                <input onClick="window.location.href='proefopdrachtAngi.html'" type="submit" Value="Kies dit Pakket >" class="btn btn__txt card__btn">
+                                <div class="card__meer-informatie-wrapper">
+                                    <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">TarievenSpecificatie</a>
+                                    <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">Meer informatie</a>
                                 </div>
                         </div>
                     </div>
-                    <div class="kies-je-product-card kies-je-product-card--transparent">
-                        <div class="kies-je-product-card__img kies-je-product-card--transparent__img"></div>
-                        <div class="kies-je-product-card__contentwrapper">
-                            <div class="kies-je-product-card__txt--title txt--title">
+                    <div class="card card--transparent">
+                        <div class="card__img card--transparent__img"></div>
+                        <div class="card__contentwrapper">
+                            <div class="card__txt--title txt--title">
                                 Wind uit Nederland met BOKS Live
                             </div>
-                            <div class="kies-je-product-card__txt--alinea txt--regular">
+                            <div class="card__txt--alinea txt--regular">
                                 Bespaar tot 10% op je energiekosten. Eenmalig €50.
                             </div>
-                            <div class="kies-je-product-card__txt-bedrag-termijn-wrapper txt--regular">
-                                    <div class="kies-je-product-card__txt-termijn-wrapper">
-                                        <div class="kies-je-product-card__txt--per-jaar">
+                            <div class="card__txt-bedrag-termijn-wrapper txt--regular">
+                                    <div class="card__txt-termijn-wrapper">
+                                        <div class="card__txt--per-jaar">
                                             per jaar
                                         </div>
                                         <div>
                                             maandelijks
                                         </div>
                                     </div>
-                                    <div class="kies-je-product-card__txt-bedrag-wrapper">
-                                        <div class="kies-je-product-card__txt-bedrag-jaar">
+                                    <div class="card__txt-bedrag-wrapper">
+                                        <div class="card__txt-bedrag-jaar">
                                             € 1320.00
                                         </div>
-                                        <div class="kies-je-product-card__txt-bedrag-maandelijks txt--title">
+                                        <div class="card__txt-bedrag-maandelijks txt--title">
                                             <span>€</span> 110,00
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn btn__txt kies-je-product-card__btn">
-                                    <div class="btn__txt">
-                                        Kies dit Pakket >
-                                    </div>
-                                </button>
-                                <div class="kies-je-product-card__meer-informatie-wrapper">
-                                    <a href="#" class="kies-je-product-card__meer-informatie__txt txt--medium">TarievenSpecificatie</a>
-                                    <a href="#" class="kies-je-product-card__meer-informatie__txt txt--medium">Meer informatie</a>
+                                <input onClick="window.location.href='proefopdrachtAngi.html'" type="submit" Value="Kies dit Pakket >" class="btn btn__txt card__btn">
+                                <div class="card__meer-informatie-wrapper">
+                                    <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">TarievenSpecificatie</a>
+                                    <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">Meer informatie</a>
                                 </div>
                         </div>
                     </div>
