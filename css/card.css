@@ -6,15 +6,16 @@
     margin-left: 0.4rem;
     border-radius: 0.33rem;
     box-shadow: 0 0.08rem 0.67rem 0 #CCCECE;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 2rem;
 }
 
 .card:hover {
   
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .card--highlighted{
@@ -29,8 +30,8 @@
 }
 
 .card__img{
-    background-image: url("images/groen-uit-nederland.png");
     height: 9.25rem;
+    width: 100%;
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -38,11 +39,10 @@
 
 .card--higlighted__img{
     height: 12rem;
-    background-image: url("images/wind-uit-nederland.png");
 }
 
 .card--transparent__img{
-    background-image: url("images/wind-met-boks.png");
+   
 }
 
 
@@ -127,6 +127,15 @@ span{
         font-size: 1.17rem;
         line-height: 2rem;
     }
+
+
+
+      /* Tablet Styles */
+  @media only screen and (min-width: 415px) and (max-width: 1024px) {
+    .card--highlighted{ 
+        order: -1;
+        }
+  }
     
     /* Mobile Styles */
 @media only screen and (max-width: 415px) {
