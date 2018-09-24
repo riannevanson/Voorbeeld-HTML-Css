@@ -1,6 +1,5 @@
 .card{
-    height: 40.58rem;
-    width: 24.75rem;
+    width: 295px;
     background-color: #F9FCFD;
     margin-right: 0.4rem;
     margin-left: 0.4rem;
@@ -39,10 +38,6 @@
 
 .card--higlighted__img{
     height: 12rem;
-}
-
-.card--transparent__img{
-   
 }
 
 
@@ -141,7 +136,7 @@ span{
 @media only screen and (max-width: 415px) {
     .card{
         margin-bottom: 2rem;
-        width: 30rem;
+        width: 85%;
     }
 
 

@@ -3,16 +3,40 @@
 }
 
 
+.u-block{
+ display: block;
+}
+
+.u-flex{
+    display: flex;
+}
+.u-hidden-mobile {
+    display: block;
+}
+
+  /* Tablet Styles */
+  @media only screen and (min-width: 416px) and (max-width: 1024px) {
+  
+
+   
+    .u-hidden-tablet{
+        display: none;
+    }
+   
+ 
+
+  }
+
 /* Mobile Styles */
 @media only screen and (max-width: 415px) {
     .u-hidden-mobile {
         display: none;
     }
+    
+   
+
+    
   }
 
-  /* Tablet Styles */
-@media only screen and (min-width: 416px) and (max-width: 960px) {
-    .u-hidden-tablet {
-        display: none;
-    }
-  }
+
+  

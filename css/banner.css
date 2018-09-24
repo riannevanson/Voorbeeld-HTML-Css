@@ -10,22 +10,24 @@
     height: 15.25rem;
     width: 100%;
     background-image: linear-gradient(-90deg, #008442 0%, #9ECC2B 100%);
-    position: absolute; 
     top: 33.33rem;
     display: flex;
    flex-direction: column;
+   align-content: flex-end;
+ 
    
 
  }
 
- .banner-bottom__txt-wrapper{
+ .banner-bottom__txt-tree-wrapper{
      
     width: 23.25rem;
-    height: 8.33rem;
-    position: absolute;
-    left: 65%;
+    margin-left: 65%;
+    margin-right: auto;
     top: -24rem;
 }
+
+
 .banner-bottom__txt{
     color: #ffffff;
     line-height: 2.08rem;
@@ -41,6 +43,7 @@
  background-size: cover;
  height: 24rem;
  width: 19.42rem;
+ margin-top: -24rem;
  
 }
 
@@ -49,17 +52,19 @@
 /* Tablet Styles */
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
 
-    .banner-bottom__txt-wrapper{
+  
+    .banner-bottom__txt-tree-wrapper{
         
-        display: flex;
-        justify-content: center;
-        top: 0;
-        position: absolute;
-        left: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
+        margin-left:auto;
+        margin-right: auto;
+       flex-direction: column;
+      
+     }
+     .banner-bottom__txt-wrapper{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     }
 
 
 }
@@ -83,16 +88,18 @@
        padding-right: 0;
        justify-content: center;
     }
-    .banner-bottom__txt-wrapper{
+
+    .banner-bottom__txt-tree-wrapper{
         
-        display: flex;
-        justify-content: center;
-        top: 0;
-        position: absolute;
-        left: auto;
-        display: flex;
-        flex-direction: column;
+       margin-left:auto;
+       margin-right: auto;
+      flex-direction: column;
+     
     }
-    
+    .banner-bottom__txt-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
 
   }

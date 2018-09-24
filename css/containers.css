@@ -2,8 +2,9 @@
 .banner-wrapper{ 
     display: flex;
     flex-direction: column;
-    height: 48.58rem;
     width: 100vw;
+    height: 583px;
+    background-color: #D3EEFB;
  }
 
  
@@ -28,15 +29,15 @@
  
  
  
- .section-title{
+ .section-wrapper{
      display: block;
      box-sizing: border-box;
      width:100%;
-     padding-top: 3.3rem;
+     margin-top: 4%;
  
  }
  
- .kies-je-product__title{
+ .section-title{
      font-size: 2rem;
  } 
  
@@ -52,7 +53,7 @@
  }
  
   /* Tablet Styles */
-  @media only screen and (min-width: 415px) and (max-width: 1024px) {
+  @media only screen and (min-width: 415px) and (max-width: 1023px) {
 
   
 
@@ -85,6 +86,8 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    
   }
 
  
@@ -96,7 +99,7 @@
     .box-wrapper{
     margin: auto;
     margin-top: 2.5rem;
-    width: 32rem;
+    width: 85%;
     }
 
    
@@ -109,6 +112,7 @@
         align-items: center;
         justify-content: space-between;
     }
+ 
 
 
   }
