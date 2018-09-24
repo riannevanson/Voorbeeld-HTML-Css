@@ -34,6 +34,9 @@
     .u-hidden-mobile {
         display: none;
     }
+    .u-block-mobile{
+        display: block;
+    }
     
     .u-flex-mobile{
         display: flex;

@@ -89,8 +89,18 @@
     .banner-top{
         display: flex; 
         justify-content: center;
+        align-content: center;
         width:100%;
+        flex-direction: column;
     }
+    .box--title{
+        padding-top: 20%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+  
 
     .banner-bottom{
         align-items: center;
