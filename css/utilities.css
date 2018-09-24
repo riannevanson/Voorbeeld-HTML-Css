@@ -10,9 +10,11 @@
 .u-flex{
     display: flex;
 }
-.u-hidden-mobile {
-    display: block;
+
+.u-hidden-desktop{
+    display: none;
 }
+
 
   /* Tablet Styles */
   @media only screen and (min-width: 416px) and (max-width: 1024px) {
@@ -33,6 +35,9 @@
         display: none;
     }
     
+    .u-flex-mobile{
+        display: flex;
+    }
    
 
     
