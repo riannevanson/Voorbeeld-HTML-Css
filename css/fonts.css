@@ -35,7 +35,6 @@
 
 h1{
     font-size: 2rem;  
-    color: #666666;
     margin:0;
     padding:0;
     font-family: dax-regular;
@@ -46,24 +45,24 @@ h1{
 
 h2{
     font-size: 1.75rem;  
-    color: #666666;
     margin:0;
     padding:0;
     font-family: dax-bold;
 }
 
 h3{
-    font-size: 1.17rem;
-    color: #9B9B9B;
+    margin:0;
+    padding:0;
+    font-size: 1.33rem;
     line-height: 2rem;
 }
 
-/* h4{
+h4{
     margin:0;
    padding:0;
     font-size: 1.17rem;
-    color: #9B9B9B;
-} */
+    font-family: dax-regular;
+    }
 
 h5{
     margin:0;
@@ -77,7 +76,6 @@ p{
     margin:0;
     padding:0;
     font-size: 1.17rem;
-    color: #9B9B9B;
     line-height: 2rem;
 }
 
@@ -88,6 +86,7 @@ p{
     font-family: dax-regular;
     font-size: 1.33rem;
     color: #9B9B9B;
+    line-height: 2rem;
 }
 .txt--medium{
     font-family: dax-medium;
@@ -108,3 +107,15 @@ p{
 .txt__align--center{
     text-align: center;
 }
+
+.txt-color--darkgrey{
+  color:  #666666;
+}
+
+.txt-color--grey{
+    color:  #9B9B9B;
+  }
+
+  .txt-color--white{
+    color:  #FFFFFF;
+  }

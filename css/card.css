@@ -1,4 +1,4 @@
-.card{
+.c-card{
     width: 295px;
     background-color: #F9FCFD;
     margin-right: 0.4rem;
@@ -12,22 +12,22 @@
     margin-bottom: 2rem;
 }
 
-.card:hover {
+.c-card:hover {
   
     transform: scale(1.02);
 }
 
-.card--highlighted{
+.c-card--highlighted{
     border-width: 0.08rem;
     border-color: #0099DC;
     border-style: solid;
 }
 
-.card--transparent{
+.c-card--transparent{
    opacity: 0.35;  
 }
 
-.card__img{
+.c-card__img{
     height: 111px;
     width: 100%;
     background-position: center; 
@@ -35,51 +35,51 @@
     background-size: cover;
 }
 
-.card--higlighted__img{
+.c-card--higlighted__img{
     height: 144px;
 }
 
 
-.card__contentwrapper{
+.c-card__contentwrapper{
     padding: 2rem;
     display: flex;
     flex-direction: column;  
     justify-content: space-between;  
 }
 
-.card__txt--title{
+.c-card__txt--title{
     padding-bottom: 0.58rem;
 }
 
-.card__txt--alinea{
+.c-card__txt--alinea{
     padding-bottom: 2.58rem;
 }
 
-.card__txt-bedrag-termijn-wrapper{
+.c-card__txt-bedrag-termijn-wrapper{
     display:flex;
     justify-content: space-between;
     padding-bottom: 1.58rem;
     align-items: flex-end;
 }
 
-.card__txt-bedrag-wrapper{
+.c-card__txt-bedrag-wrapper{
     display:flex;
     flex-direction: column;
 
 }
 
-.card__txt-termijn-wrapper{
+.c-card__txt-termijn-wrapper{
     display:flex;
     flex-direction: column;
 }
 
 
-.card__txt--per-jaar{
+.c-card__txt--per-jaar{
     font-size: 1.17rem;
     padding-bottom: 1rem;
 }
 
-.card__txt--maandelijks{
+.c-card__txt--maandelijks{
     font-size: 1.17rem;
     color:  #9B9B9B;
 }
@@ -89,55 +89,55 @@ span{
     font-size: 1.33rem;
     color: #9B9B9B;
 }
-.card__txt-bedrag-maandelijks{
+.c-card__txt-bedrag-maandelijks{
     text-align: right;  
     color: #666666;  
-    }
+}
 
-.card__txt-bedrag-jaar{
+.c-card__txt-bedrag-jaar{
     text-align: right;
     padding-bottom: 0.5rem;
     color: #9B9B9B;
 }
 
-.card__btn{
+.c-card__btn{
     display:flex;
     justify-content: center;
     margin-bottom: 1.17rem;
 }
 
-.card__meer-informatie-wrapper{
+.c-card__meer-informatie-wrapper{
     display: flex;
     flex-direction: column;
     text-align: center;
     }
     
-    .card__meer-informatie__txt{
-        text-decoration: underline;
-        color: #007D46;
-        font-family: dax-medium;
-        font-size: 1.17rem;
-        line-height: 2rem;
-    }
+.c-card__meer-informatie__txt{
+    text-decoration: underline;
+    color: #007D46;
+    font-family: dax-medium;
+    font-size: 1.17rem;
+    line-height: 2rem;
+}
 
 
 
       /* Tablet Styles */
   @media only screen and (min-width: 415px) and (max-width: 1024px) {
-    .card--highlighted{ 
+    .c-card--highlighted{ 
         order: -1;
         }
   }
     
     /* Mobile Styles */
 @media only screen and (max-width: 415px) {
-    .card{
+    .c-card{
         margin-bottom: 2rem;
         width: 85%;
     }
 
 
-    .card--highlighted{ 
+    .c-card--highlighted{ 
     order: -1;
     }
   }

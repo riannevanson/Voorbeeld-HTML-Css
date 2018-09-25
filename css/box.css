@@ -1,6 +1,6 @@
 
    
-.box--alinea .box--alinea{
+.c-box--alinea .c-box--alinea{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -9,18 +9,18 @@
    }
 
 
-   .box--line{
+   .c-box--line{
         height: 0.21rem;
         background-color: #E0E6EC;
         margin-bottom: 1.63rem;
    }
    
-   .box--undertitle{
+   .c-box--undertitle{
        font-size: 1.42rem;
        margin-bottom: 0.05rem;
    }
    
-   .box__btn-numbers-wrapper{
+   .c-box__btn-numbers-wrapper{
    display: flex;
    align-items: center;
    margin-top: 0.5rem;

@@ -1,16 +1,9 @@
-a.btn{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
-    text-decoration: none;
-    color: initial;
-}
 
 .btn{
     padding:0;
     height: 43px;
     width: 100%;
+    color: #725A07;
     background: #ffce00; /* Old browsers */
     background: -moz-linear-gradient(top, #ffce00 0%, #fbc600 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #ffce00 0%,#fbc600 100%); /* Chrome10-25,Safari5.1-6 */

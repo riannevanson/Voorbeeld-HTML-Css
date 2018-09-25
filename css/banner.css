@@ -1,15 +1,30 @@
 
- .banner-top{
+ .l-banner-top{
     height: 100%;
-    background-color: #D3EEFB;
+    /* background-color: #D3EEFB; */
     display: flex; 
+    padding-left: 11.92%;
+    padding-top: 8.33%;
+}
+
+
+.l-banner-top-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+}
+
+
+.banner-top-background{
+    background-color: #D3EEFB;
 }
 
 .banner-bottom{
-    box-sizing: border-box;
-    width: 100%;
+    /* c-box-sizing: border-c-box; */
+    /* width: 100%; */
     background-image: linear-gradient(-90deg, #9ECC2B 0%, #008442 100%);
-    top: 33.33rem;
+    /* top: 33.33rem; */
     display: flex;
     flex-direction: column;
     align-content: flex-end;
@@ -20,7 +35,7 @@
      display: flex;
      justify-content: center;
      flex-direction: column;
-     padding: 41px;
+     padding: 41px 5px 41px 5px;
      width: 295px;
 
  }
@@ -43,7 +58,6 @@
 
 .banner-tree{
  display: block;
- background-image: url("images/header.png");
  background-position: center; 
  background-repeat: no-repeat; 
  background-size: cover;
@@ -57,6 +71,15 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
+
+
+    .l-banner-top{
+        padding: 24px 24px 0 24px;
+            }
+
+    .c-box-wrapper{
+        margin: auto;
+    }
 
   
     .banner-bottom__txt-tree-wrapper{
@@ -80,14 +103,17 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 415px) {
-    .banner-top{
+    .l-banner-top{
         display: flex; 
         justify-content: center;
         align-content: center;
         width:100%;
         flex-direction: column;
+        padding:0;
+
+        
     }
-    .box--title{
+    .c-box--title{
         padding-top: 20%;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -114,6 +140,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        width: auto;
     }
 
   }
