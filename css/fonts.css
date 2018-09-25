@@ -34,35 +34,52 @@
 
 
 h1{
+    font-size: 2rem;  
+    color: #666666;
+    margin:0;
+    padding:0;
+    font-family: dax-regular;
+   
+}
+
+
+
+h2{
     font-size: 1.75rem;  
     color: #666666;
     margin:0;
     padding:0;
-   
-}
-
-h2{
-    margin:0;
-    padding:0; 
-    font-size: 1.33rem;
-    color: #666666;
-
+    font-family: dax-bold;
 }
 
 h3{
+    font-size: 1.17rem;
+    color: #9B9B9B;
+    line-height: 2rem;
+}
+
+/* h4{
     margin:0;
    padding:0;
     font-size: 1.17rem;
     color: #9B9B9B;
-}
+} */
 
-h4{
+h5{
     margin:0;
    padding:0;
     font-family: dax-light;
 }
 
-
+p{
+    margin:0;
+    padding:0;
+    margin:0;
+    padding:0;
+    font-size: 1.17rem;
+    color: #9B9B9B;
+    line-height: 2rem;
+}
 
 .txt--light{
     font-family: dax-light;

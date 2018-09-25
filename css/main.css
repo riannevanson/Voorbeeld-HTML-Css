@@ -25,6 +25,9 @@ article{
     justify-content: center;
 }
  
+article, section{
+    display: block;
+}
 
 
 /* Mobile Styles */

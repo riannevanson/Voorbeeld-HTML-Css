@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Angi-studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/containers.css" />
-    <link rel="stylesheet" type="text/css" href="css/banner.css" />
-    <link rel="stylesheet" type="text/css" href="css/box.css" />
-    <link rel="stylesheet" type="text/css" href="css/btn.css" />
-    <link rel="stylesheet" type="text/css" href="css/card.css" />
-    <link rel="stylesheet" type="text/css" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/containers.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/box.css" />
+    <link rel="stylesheet" href="css/btn.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
     <script src="proefopdrachtAngi-algoritme/Thirsty_Thursdays.js"></script>
 </head>
 <body>
-    
+    <div class="w-content-wrapper">
         <article class="banner-wrapper">
             <div class="banner-top">
 
@@ -25,33 +25,37 @@
                            
                         </h1>
                     <div class="box-wrapper">
-                        <h1 class="box--title u-hidden-mobile ">
+                        <h2 class="box--title u-hidden-mobile ">
                             <b>Wij dromen ervan dat iedereen zijn eigen energieleverancier wordt. Goed voor jou én voor de aarde</b>
                            
-                        </h1>
+                        </h2>
                         <div class="box--alinea txt--regular">
-                        <ul class="box--alinea">
-                            <li>Beste uit de test 2015 volgens Consumentenbond</li>
-                            <li>Altijd scherpe tarieven</li>
-                            <li>Zelf zaken regelen in Mijn dossier</li>
-                        </ul>
+                            <p>
+                                <ul class="box--alinea">
+                                    <li>Beste uit de test 2015 volgens Consumentenbond</li>
+                                    <li>Altijd scherpe tarieven</li>
+                                    <li>Zelf zaken regelen in Mijn dossier</li>
+                                </ul>
+
+                            </p> 
                         </div>
                         <div class="box--line"></div>
-                        <div class="box--undertitle txt--title">
-                                Hoeveel personen wonen er in huis?
+                        <div class="box--undertitle">
+                           <h3><b> Hoeveel personen wonen er in huis?</b> </h3>   
                         </div>
-                        <form>
-                            <div class="box__btn-numbers-wrapper">
-                                <input type="radio" id="option-one" name="selector" ><label class="btn btn--choice txt--medium" for="option-one">1</label>
-                                <input type="radio" id="option-two" name="selector" checked><label class="btn btn--choice txt--medium"for="option-two">2</label>
-                                <input type="radio" id="option-three" name="selector"><label class="btn btn--choice txt--medium u-hidden-mobile" for="option-three">3</label>
-                                <input type="radio" id="option-four" name="selector"><label class="btn btn--choice txt--medium u-hidden-mobile" for="option-four">4</label>
-                                <input type="radio" id="option-five" name="selector"><label class="btn btn--choice txt--medium u-hidden-mobile" for="option-five">5</label>
-                                <input type="radio" id="option-six" name="selector"><label class="btn btn--choice txt--medium u-hidden-desktop u-hidden-tablet u-flex-mobile" for="option-six">meer..</label>
-                            </div>
-                            <input onClick="window.location.href='proefopdrachtAngi.html'" type="submit" class="btn btn__txt" value="Bereken je groene energietarief ›">
-                        </form>  
-                    
+                        <div>
+                            <form>
+                                <div class="box__btn-numbers-wrapper">
+                                    <input type="radio" id="option-one" name="selector" ><label class="btn btn--choice txt--medium" for="option-one">1</label>
+                                    <input type="radio" id="option-two" name="selector" checked><label class="btn btn--choice txt--medium" for="option-two">2</label>
+                                    <input type="radio" id="option-three" name="selector"><label class="btn btn--choice txt--medium u-hidden-mobile" for="option-three">3</label>
+                                    <input type="radio" id="option-four" name="selector"><label class="btn btn--choice txt--medium u-hidden-mobile" for="option-four">4</label>
+                                    <input type="radio" id="option-five" name="selector"><label class="btn btn--choice txt--medium u-hidden-mobile" for="option-five">5</label>
+                                    <input type="radio" id="option-six" name="selector"><label class="btn btn--choice txt--medium u-hidden-desktop u-hidden-tablet u-flex-mobile" for="option-six">meer..</label>
+                                </div>
+                                <button class="btn btn__txt">Bereken je groene energietarief ›</button>
+                            </form>  
+                        </div>
                     </div>
             </div>
             <div class="banner-bottom">
@@ -59,12 +63,16 @@
                          <div class="banner-tree u-hidden-mobile u-hidden-tablet ">
                          </div>
                          <div class="banner-bottom__txt-wrapper">
-                         <h3 class="banner-bottom__txt">
-                                    Zelf opwekken voor iedereen
-                         </h3> 
-                         <h4 class="banner-bottom__txt">
-                                Nog minder dan 600 dagen. Dat is de tijd die Nederland nog heeft om zijn klimaatdoel te halen. 
-                         </h4> 
+                           <h4>
+                                <b>
+                                    <div class="banner-bottom__txt txt-bold">
+                                            Zelf opwekken voor iedereen
+                                    </div> 
+                                </b>
+                                <div class="banner-bottom__txt">
+                                        Nog minder dan 600 dagen. Dat is de tijd die Nederland nog heeft om zijn klimaatdoel te halen. 
+                                </div> 
+                           </h4> 
                         </div>
                 </div>
             </div>
@@ -72,18 +80,18 @@
        
         <article class="section-wrapper">
             <div class="section-title txt__align--center txt--medium">
-                Kies je product
+               <h1>Kies je product</h1> 
             </div>
             <div class="card-wrapper">
                     <div class="card card--normal">
-                        <img src="css/images/groen-uit-nederland.png" class="card__img">
+                        <img src="css/images/groen-uit-nederland.png" alt="groen-uit-nederland" class="card__img">
                         <div class="card__contentwrapper">
-                            <div class="card__txt--title txt--title">
-                                Groen uit Nederland
+                            <div class="card__txt--title">
+                               <h2><b>Groen uit Nederland</b></h2> 
                             </div>
-                            <div class="card__txt--alinea txt--regular">
-                                    50% groene stroom uit biovergisters, 50% uit windmolens en bosgecompenseerd gas
-                            </div>
+                            <p class="card__txt--alinea txt--regular">
+                                    50&#37; groene stroom uit biovergisters, 50% uit windmolens en bosgecompenseerd gas
+                            </p>
                             <div class="card__txt-bedrag-termijn-wrapper">
                                 <div class="card__txt-termijn-wrapper txt--regular">
                                     <div class=" card__txt--per-jaar">
@@ -95,14 +103,14 @@
                                 </div>
                                 <div class="card__txt-bedrag-wrapper txt--regular">
                                     <div class="card__txt-bedrag-jaar">
-                                        € 1320.00
+                                            &euro; 1320.00
                                     </div>
                                     <div class="card__txt-bedrag-maandelijks txt--title">
-                                        <span>€</span> 110,00
+                                        <span>&euro;</span> 110,<sup>00</sup>
                                     </div>
                                 </div>
                             </div>
-                            <input onClick="window.location.href='proefopdrachtAngi.html'" type="submit" Value="Kies dit Pakket >" class="btn btn__txt card__btn">
+                            <button class="btn btn__txt card__btn">Kies dit Pakket ></button>
                             
                             
                             <div class="card__meer-informatie-wrapper">
@@ -112,14 +120,14 @@
                         </div>
                     </div>
                     <div class="card card--highlighted">
-                        <img src="css/images/wind-uit-nederland.png" class="card__img card--higlighted__img">
+                        <img src="css/images/wind-uit-nederland.png" alt="wind-uit-nederland" class="card__img card--higlighted__img">
                         <div class="card__contentwrapper">
                             <div class="card__txt--title txt--title">
-                                Wind uit Nederland
+                              <h2><b> Wind uit Nederland</b></h2> 
                             </div>
-                            <div class="card__txt--alinea txt--regular">
-                                100% groene stroom uit Nederlandse windmolens en bosgecompenseerd gas.
-                            </div>
+                            <p class="card__txt--alinea txt--regular">
+                                100&#37; groene stroom uit Nederlandse windmolens en bosgecompenseerd gas.
+                            </p>
                             <div class="card__txt-bedrag-termijn-wrapper txt--regular">
                                     <div class="card__txt-termijn-wrapper">
                                         <div class="card__txt--per-jaar">
@@ -131,14 +139,14 @@
                                     </div>
                                     <div class="card__txt-bedrag-wrapper">
                                         <div class="card__txt-bedrag-jaar">
-                                            € 1320.00
+                                                &euro; 1320.00
                                         </div>
                                         <div class="card__txt-bedrag-maandelijks txt--title">
-                                            <span>€</span> 110,00
+                                            <span>&euro;</span> 110,<sup>00</sup>
                                         </div>
                                     </div>
                                 </div>
-                                <input onClick="window.location.href='proefopdrachtAngi.html'" type="submit" Value="Kies dit Pakket >" class="btn btn__txt card__btn">
+                                <button class="btn btn__txt card__btn">Kies dit Pakket ></button>
                                 <div class="card__meer-informatie-wrapper">
                                     <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">TarievenSpecificatie</a>
                                     <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">Meer informatie</a>
@@ -146,13 +154,13 @@
                         </div>
                     </div>
                     <div class="card card--transparent">
-                        <img src="css/images/wind-met-boks.png" class="card__img card--transparent__img">
+                        <img src="css/images/wind-met-boks.png" alt="wind-uit-nederland-met-boks" class="card__img card--transparent__img">
                         <div class="card__contentwrapper">
-                            <div class="card__txt--title txt--title">
-                                Wind uit Nederland met BOKS Live
+                            <div class="card__txt--title">
+                               <h2><b>Wind uit Nederland met BOKS Live</b></h2> 
                             </div>
                             <div class="card__txt--alinea txt--regular">
-                                Bespaar tot 10% op je energiekosten. Eenmalig €50.
+                                Bespaar tot 10&#37; op je energiekosten. Eenmalig €50.
                             </div>
                             <div class="card__txt-bedrag-termijn-wrapper txt--regular">
                                     <div class="card__txt-termijn-wrapper">
@@ -165,14 +173,14 @@
                                     </div>
                                     <div class="card__txt-bedrag-wrapper">
                                         <div class="card__txt-bedrag-jaar">
-                                            € 1320.00
+                                                &euro; 1320.00
                                         </div>
                                         <div class="card__txt-bedrag-maandelijks txt--title">
-                                            <span>€</span> 110,00
+                                            <span>&euro;</span> 110,<sup>00</sup>
                                         </div>
                                     </div>
                                 </div>
-                                <input onClick="window.location.href='proefopdrachtAngi.html'" type="submit" Value="Kies dit Pakket >" class="btn btn__txt card__btn">
+                                <button class="btn btn__txt card__btn">Kies dit Pakket ></button>
                                 <div class="card__meer-informatie-wrapper">
                                     <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">TarievenSpecificatie</a>
                                     <a href="proefopdrachtAngi.html" class="card__meer-informatie__txt txt--medium">Meer informatie</a>
@@ -181,6 +189,6 @@
                     </div>
             </div>
         </article>
-    
+    </div>
 </body>
 </html>

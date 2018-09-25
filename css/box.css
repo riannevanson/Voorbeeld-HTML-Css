@@ -32,8 +32,8 @@
      /* Tablet Styles */
   @media only screen and (min-width: 415px) and (max-width: 1024px) {
   
-.banner-bottom{
-    padding: 5%;
-}
+    .banner-bottom{
+        padding: 5%;
+    }
 
 }
