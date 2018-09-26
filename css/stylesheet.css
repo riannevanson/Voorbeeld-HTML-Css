@@ -315,10 +315,6 @@ article, section {
     box-shadow: none;
     border: none;
     background: hsl(48, 83%, 72%);
-    /* Old browsers */
-    /* background: -moz-linear-gradient(top, #fbc600 0%, #ffce00 100%); /* FF3.6-15 */
-    /* background: -webkit-linear-gradient(top, #fbc600 0%, #ffce00 100%); Chrome10-25,Safari5.1-6 */
-    /* background: linear-gradient(to bottom,  #fbc600 0%, #ffce00 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     -webkit-transition-duration: 0.3s;
@@ -430,9 +426,9 @@ input[type=radio]:checked+label {
 
 .l-card__contentwrapper {
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
 }
 
 .c-card__txt--title {
@@ -450,15 +446,6 @@ input[type=radio]:checked+label {
     align-items: flex-end;
 }
 
-.l-card__txt-bedrag-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.l-card__txt-termijn-wrapper {
-    display: flex;
-    flex-direction: column;
-}
 
 .c-card__txt--per-jaar {
     font-size: 1.17rem;
@@ -548,8 +535,8 @@ span {
         align-items: center;
         padding: 10px 0;
         margin-top: -10px;
-        /* justify-content: center;
-       text-align: center; */
+        justify-content: center;
+       text-align: center;
     }
     .l-card-wrapper {
         width: 100%;
@@ -567,7 +554,7 @@ span {
     .l-banner-bottom-wrapper {
         padding: 8% 0 5% 0;
     }
-    .l-banner-bottom__txt-tree-wrapper {
+    .l-banner-bottom__txt-img-wrapper {
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
