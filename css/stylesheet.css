@@ -493,14 +493,14 @@ span {
     margin-bottom: 1.17rem;
 }
 
-.l-card__meer-informatie-wrapper {
+.l-card__link-wrapper {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 14px;
 }
 
-.c-card__meer-informatie__txt {
+.c-card__link__txt {
     text-decoration: underline;
     color: #007D46;
     font-family: dax-medium;
