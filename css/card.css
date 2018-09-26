@@ -17,15 +17,21 @@
     transform: scale(1.02);
 }
 
+
+
 .c-card--highlighted{
     border-width: 0.08rem;
     border-color: #0099DC;
     border-style: solid;
 }
 
+
+
 .c-card--transparent{
    opacity: 0.35;  
 }
+
+
 
 .c-card__img{
     height: 111px;
@@ -40,7 +46,7 @@
 }
 
 
-.c-card__contentwrapper{
+.l-card__contentwrapper{
     padding: 2rem;
     display: flex;
     flex-direction: column;  
@@ -48,27 +54,27 @@
 }
 
 .c-card__txt--title{
-    padding-bottom: 0.58rem;
+    margin-bottom: 0.58rem;
 }
 
 .c-card__txt--alinea{
-    padding-bottom: 2.58rem;
+    margin-bottom: 2.58rem;
 }
 
-.c-card__txt-bedrag-termijn-wrapper{
+.l-card__txt-bedrag-termijn-wrapper{
     display:flex;
     justify-content: space-between;
     padding-bottom: 1.58rem;
     align-items: flex-end;
 }
 
-.c-card__txt-bedrag-wrapper{
+.l-card__txt-bedrag-wrapper{
     display:flex;
     flex-direction: column;
 
 }
 
-.c-card__txt-termijn-wrapper{
+.l-card__txt-termijn-wrapper{
     display:flex;
     flex-direction: column;
 }
@@ -89,6 +95,7 @@ span{
     font-size: 1.33rem;
     color: #9B9B9B;
 }
+
 .c-card__txt-bedrag-maandelijks{
     text-align: right;  
     color: #666666;  
@@ -106,10 +113,11 @@ span{
     margin-bottom: 1.17rem;
 }
 
-.c-card__meer-informatie-wrapper{
+.l-card__meer-informatie-wrapper{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 14px;
     }
     
 .c-card__meer-informatie__txt{
@@ -133,7 +141,6 @@ span{
 @media only screen and (max-width: 415px) {
     .c-card{
         margin-bottom: 2rem;
-        width: 85%;
     }
 
 

@@ -8,7 +8,7 @@
 
 
 
-.banner-background{ 
+.c-banner{ 
     width: 100%;
     background-color: #D3EEFB;
     /* display: flex;
@@ -16,34 +16,34 @@
     justify-content: center; */
  }
  
- .c-box-wrapper{
+.l-box-container{
+    padding: 2rem;
+    box-sizing: border-box;
+    justify-content:space-between;
+    margin-bottom: -8.33%;
+    z-index: 999;
+}
+
+ .c-box{
      background-color: #FFFFFF;
      width: 483px;
-     box-shadow: 0 0.08rem 0.67rem 0 #CCCECE;
-     z-index: 999;
-     padding: 2rem;
+     box-shadow: 0 0.08rem 0.67rem 0 #CCCECE;     
      border-radius: 0.33rem;
-     box-sizing: border-box;
-     justify-content:space-between;
-     margin-bottom: -8.33%;
- 
  }
  
  
- 
- .section-wrapper{
+ .l-section-wrapper{
      display: block;
      box-sizing: border-box;
      width:100%;
      margin-top: 4%;
- 
  }
  
  .section-title{
      font-size: 2rem;
  } 
  
- .card-wrapper{
+ .l-card-wrapper{
      width: 100%;
      margin-top: 3.3rem;
      margin-bottom: 10rem;
@@ -56,22 +56,18 @@
   /* Tablet Styles */
   @media only screen and (min-width: 415px) and (max-width: 1024px) {
 
-    .banner-background{ 
+    .c-banner{ 
         display: flex;
         flex-direction: column;
         justify-content: center;
      }
 
-    .banner-top{
-        display: flex; 
-        justify-content: center;
-        width:100vw;
-    }
+ 
 
-    .c-box-wrapper{
+    .l-box-container{
         margin: auto;
         margin-top: 2rem;
-        width: 40rem;
+        width: 483px;
         margin-bottom: -5%;
         }
 
@@ -83,7 +79,7 @@
        text-align: center; */
     }
     
-    .card-wrapper{
+    .l-card-wrapper{
         width: 100%;
         margin-top: 3.3rem;
         margin-bottom: 10rem;
@@ -104,16 +100,16 @@
     height: 60%;
 }
 
-    .c-box-wrapper{
+    /* .l-box-container{
     margin: auto;
     margin-top: 2.5rem;
     width: 85%;
     position: relative;
     margin-bottom: -20px;
-    }
+    } */
 
    
-    .card-wrapper{
+    .l-card-wrapper{
         width: 100%;
         margin-top: 3.3rem;
         margin-bottom: 10rem;

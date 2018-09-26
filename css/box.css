@@ -1,6 +1,6 @@
 
    
-.c-box--alinea .c-box--alinea{
+.l-box--alinea-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,20 +20,46 @@
        margin-bottom: 0.05rem;
    }
    
-   .c-box__btn-numbers-wrapper{
-   display: flex;
-   align-items: center;
-   margin-top: 0.5rem;
-   margin-bottom: 2.25rem;
-   height: 5rem;
+   .l-box__btn-numbers-wrapper{
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+        margin-bottom: 2.25rem;
+        height: 5rem;
    }
    
 
      /* Tablet Styles */
   @media only screen and (min-width: 415px) and (max-width: 1024px) {
   
-    .banner-bottom{
-        padding: 5%;
+   
+
+
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 415px) {
+
+    .l-box-container{
+    padding: 24px;
     }
 
+    .l-banner-top-mobile{
+        padding-top: 15%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+    .c-box--title{
+        margin-bottom: 24px;
+    }
+    .c-box--undertitle{
+        text-align: center;
+    }
+    .c-box{
+        width: auto;
+        margin-top: 24px;
+    }
 }
